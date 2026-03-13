@@ -116,7 +116,7 @@ mini-hospital-system
 └── README.md
 Installation & Setup
 1. Clone the Repository
-git clone https://github.com/yourusername/mini-hospital-management-system.git
+git clone https://github.com/Harshpandeyiitian04/mini-hospital-system
 cd mini-hospital-management-system
 2. Setup Python Environment
 python -m venv venv
