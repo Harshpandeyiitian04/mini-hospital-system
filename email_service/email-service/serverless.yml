@@ -4,7 +4,11 @@ frameworkVersion: '3'
 
 provider:
   name: aws
-  runtime: python3.9
+  runtime: python3.10
+
+  environment:
+    SMTP_EMAIL: harshpandey59365@gmail.com
+    SMTP_PASSWORD: cxxrpbrqlmikaqzb
 
 plugins:
   - serverless-offline
