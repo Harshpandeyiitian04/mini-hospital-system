@@ -1,0 +1,12 @@
+<h2>Patient Dashboard</h2>
+<h3>Available Doctors</h3>
+<ul>
+    {% for doctor in doctors %}
+        <li>
+            Dr. {{doctor.user.username}}
+            <a href="/patient/doctor/{{doctor.id}}/">
+                View Slots
+            </a>
+        </li>
+    {% endfor %}
+</ul>

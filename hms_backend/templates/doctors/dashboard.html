@@ -1,0 +1,25 @@
+<h2>Doctor Dashboard</h2>
+<a href="/doctor/create-slot/">Create Availability Slot</a>
+<h3>Your Slots</h3>
+<table border="1">
+    <tr>
+        <th>Date</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Status</th>
+    </tr>
+    {% for slot in slots %}
+    <tr>
+        <td>{{slot.date}}</td>
+        <td>{{slot.start_time}}</td>
+        <td>{{slot.end_time}}</td>
+        <td>
+            {% if slot.is_booked %}
+                Booked
+            {% else %}
+                Available
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
